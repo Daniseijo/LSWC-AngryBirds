@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="CIj-W4-RDU">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Master View Controller - Angry Birds-->
+        <scene sceneID="PkJ-Jq-A6f">
+            <objects>
+                <viewController id="ksP-11-RMc" customClass="MasterViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z8J-w5-ACj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JYa-ZE-IVy">
+                                <rect key="frame" x="0.0" y="51" width="320" height="265"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="angry-birds-button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="push" identifier="showOriginal" id="EyF-WN-1Mh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ja9-rT-lCX">
+                                <rect key="frame" x="0.0" y="316" width="320" height="252"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <state key="normal" backgroundImage="star-wars-button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="push" identifier="showStarWars" id="7YJ-ai-Rfh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Angry Birds" id="YTL-6G-cO9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Qb-06-hqT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-346" y="226"/>
+        </scene>
+        <!--Angry Birds View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="AngryBirdsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fuerza" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qug-HR-wqQ">
+                                <rect key="frame" x="20" y="78" width="61" height="27"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distancia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uT9-6m-JGA">
+                                <rect key="frame" x="20" y="160" width="76" height="27"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ángulo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="X2X-B4-rTk">
+                                <rect key="frame" x="20" y="120" width="56" height="26"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nRa-dI-Fdm">
+                                <rect key="frame" x="70" y="518" width="63" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="Lanzar!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ejectBird:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oeu-aM-mxa"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="47" minValue="21" maxValue="73" id="vmg-j4-CvD">
+                                <rect key="frame" x="106.00000000000001" y="75" width="196" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="changeSpeed:" destination="vXZ-lx-hvc" eventType="valueChanged" id="yFU-nL-ZuW"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.02" maxValue="0.97999999999999998" id="4Ib-Bd-KUE">
+                                <rect key="frame" x="106.00000000000001" y="116" width="196" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="changeAngle:" destination="vXZ-lx-hvc" eventType="valueChanged" id="MOl-nA-Wxh"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="338" minValue="150" maxValue="526" id="BRh-5b-lcV">
+                                <rect key="frame" x="106.00000000000001" y="157" width="196" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="changeDistance:" destination="vXZ-lx-hvc" eventType="valueChanged" id="e8q-DZ-o2s"/>
+                                </connections>
+                            </slider>
+                            <view contentMode="scaleToFill" id="enP-8w-wp3" customClass="AngryBirdsView">
+                                <rect key="frame" x="20" y="198" width="280.00000000000006" height="277"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bc6-gR-XdF">
+                                        <rect key="frame" x="20" y="33" width="240" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.70196080207824707" green="0.70196080207824707" blue="0.70196080207824707" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zoom" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="I97-e6-IrG">
+                                <rect key="frame" x="20" y="489" width="76" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="136" minValue="0.0" maxValue="272" id="fM7-qM-aeN">
+                                <rect key="frame" x="106" y="483" width="196" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <action selector="changeZoom:" destination="vXZ-lx-hvc" eventType="valueChanged" id="qBh-ji-qft"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XsO-4I-4AP">
+                                <rect key="frame" x="194" y="518" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="Reiniciar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetGame:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aNh-vG-DEx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iFh-l3-Unq"/>
+                    <connections>
+                        <outlet property="buttonEject" destination="nRa-dI-Fdm" id="Ueh-bu-K9E"/>
+                        <outlet property="buttonReset" destination="XsO-4I-4AP" id="oFS-Wn-l5o"/>
+                        <outlet property="labelResult" destination="bc6-gR-XdF" id="FdS-mo-0Sh"/>
+                        <outlet property="model" destination="ghl-oZ-o5g" id="flY-Pe-jue"/>
+                        <outlet property="sliderAngle" destination="4Ib-Bd-KUE" id="nZN-Wb-roq"/>
+                        <outlet property="sliderDistance" destination="BRh-5b-lcV" id="bq4-28-0g9"/>
+                        <outlet property="sliderSpeed" destination="vmg-j4-CvD" id="XxR-Gl-gYb"/>
+                        <outlet property="sliderZoom" destination="fM7-qM-aeN" id="Zve-6V-GNu"/>
+                        <outlet property="trayView" destination="enP-8w-wp3" id="qUP-ks-IIL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <customObject id="ghl-oZ-o5g" customClass="ParabolicModel"/>
+            </objects>
+            <point key="canvasLocation" x="108" y="226"/>
+        </scene>
+        <!--Navigation Controller - Item-->
+        <scene sceneID="Gmz-rC-ljB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CIj-W4-RDU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Ynr-LY-etH"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="1rA-Wg-eXX"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SuH-R8-myy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ksP-11-RMc" kind="relationship" relationship="rootViewController" id="pXr-MO-llh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mec-J0-MCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-785" y="226"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="angry-birds-button" width="640" height="551"/>
+        <image name="star-wars-button" width="640" height="537"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="EyF-WN-1Mh"/>
+    </inferredMetricsTieBreakers>
+</document>
